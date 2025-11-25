@@ -1,10 +1,10 @@
-# 🧠 FashionMNIST Classification with ResNet (AI504 Project 1)
+# FashionMNIST Classification with ResNet (AI504 Project 1)
 
 This repository contains my implementation of a **ResNet-based CNN model** for the **FashionMNIST** classification task, as part of **KAIST AI504: Programming for AI (Fall 2025)**.
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 The objective of this project was to design, train, and evaluate a **CNN** on the FashionMNIST dataset, achieving at least **92.43% validation accuracy**.
 
@@ -13,19 +13,7 @@ The model successfully **outperformed the baseline**, reaching **93.21% validati
 
 ---
 
-## ✨ Key Improvements Beyond Baseline
-
-| Improvement | Description | Impact |
-|--------------|--------------|---------|
-| 🧩 **Custom ResNet Implementation** | Built a simplified residual network manually (BasicBlock + skip connection + BN). | Improved training stability and gradient flow. |
-| 🎨 **Data Augmentation** | Added `RandomCrop`, `RandomHorizontalFlip`, and `RandomRotation` to increase dataset diversity. | Reduced overfitting, better generalization. |
-| ⚙️ **Advanced Optimizer — AdamW** | Switched from standard Adam to **AdamW** with weight decay. | Improved regularization and final accuracy (+0.5–0.8%). |
-| 📉 **Label Smoothing in CrossEntropy** | Applied `label_smoothing=0.1` to prevent overconfidence. | Smoother training and more stable validation accuracy. |
-| 🌊 **Cosine Annealing LR Scheduler** | Gradually decayed learning rate for smoother convergence. | Boosted stability and fine-tuning in later epochs. |
-
----
-
-## 🧩 Model Architecture
+## Model Architecture
 
 ### 🔹 BasicBlock
 Each block contains:
@@ -45,7 +33,7 @@ Each block contains:
 
 ---
 
-## 🧠 Training Configuration
+## Training Configuration
 
 | Setting | Value |
 |----------|--------|
