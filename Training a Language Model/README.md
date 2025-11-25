@@ -7,10 +7,9 @@ The goal is to reproduce a GPT-style autoregressive language model and evaluate 
 
 ## Project Structure
 Training a Language Model
-├── colab_test.ipynb # Notebook for running and validating the .py script
-├── logits.npy # Saved test logits for PPL evaluation
-├── script.py # Main training script (model, training loop, logits saving)
-└── test_lm.py # Evaluation script provided by TA
+- colab_test.ipynb # Notebook for running and validating the .py script
+- script.py # Main training script (model, training loop, logits saving)
+- test_lm.py # Evaluation script provided by TA
 
 ---
 
